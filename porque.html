@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
@@ -16,24 +16,13 @@
 
     body {
       font-family: 'Comfortaa', cursive;
-      background: #f7fff9;
+      background: #ffffff;
       color: #0a2e14;
       min-height: 100vh;
       overflow-x: hidden;
     }
 
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at 0% 0%,    #00e67630 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 0%,   #00e67628 0%, transparent 40%),
-        radial-gradient(ellipse at 0% 100%,   #00e67622 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 100%, #00e67630 0%, transparent 40%);
-      pointer-events: none;
-      z-index: 0;
-    }
+    body::before { display: none; }
 
     header { position: relative; z-index: 10; text-align: center; padding: 30px 20px 10px; }
 

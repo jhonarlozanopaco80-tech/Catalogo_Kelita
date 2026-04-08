@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
@@ -11,20 +11,12 @@
 
     body {
       font-family: 'Comfortaa', cursive;
-      background: #f7fff9;
+      background: #ffffff;
       color: #0a2e14;
       min-height: 100vh;
       overflow-x: hidden;
     }
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background:
-        radial-gradient(ellipse at 0% 0%,    #00e67630 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 0%,   #00e67628 0%, transparent 40%),
-        radial-gradient(ellipse at 0% 100%,   #00e67622 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 100%, #00e67630 0%, transparent 40%);
-      pointer-events: none; z-index: 0;
-    }
+    body::before { display: none; }
 
     header { position: relative; z-index: 10; text-align: center; padding: 28px 20px 10px; }
     .logo-text {
@@ -80,7 +72,7 @@
       gap: 8px; margin-bottom: 6px;
     }
     .pill {
-      background: #f0fff6; border: 2px solid #00d96a40;
+      background: #f5f5f5; border: 2px solid #00d96a40;
       color: #0a2e14; font-size: 0.76rem; font-weight: 700;
       padding: 6px 14px; border-radius: 20px;
       box-shadow: 0 2px 8px #00d96a18;
@@ -197,7 +189,7 @@
       nombre: 'Diabetes', icono: '🩸',
       prod: 'imagenes/producto_enfer/diabetes.png',
       metodo: [
-        { p: 'Epiclax', d: '1 sobre antes de la cena, beber con agua tibia o caliente.' },
+        { p: 'Eficlax', d: '1 sobre antes de la cena, beber con agua tibia o caliente.' },
         { p: 'Alka-M', d: '1 sobre antes del almuerzo y 1 sobre antes de la cena.' },
         { p: 'Cápsulas de Moringa', d: '3 cápsulas al día: después del desayuno, almuerzo y cena.' },
         { p: 'Purifort', d: '3 cápsulas al día: después del desayuno, almuerzo y cena.' }
@@ -218,7 +210,7 @@
       nombre: 'Bajar de Peso', icono: '⚖️',
       prod: 'imagenes/producto_enfer/bajar_peso.png',
       metodo: [
-        { p: 'Epiclax', d: '1 sobre en agua tibia o caliente antes del desayuno.' },
+        { p: 'Eficlax', d: '1 sobre en agua tibia o caliente antes del desayuno.' },
         { p: 'Alka-M', d: '1 sobre antes del almuerzo y 1 sobre antes de la cena.' },
         { p: 'Cápsulas de Moringa', d: '3 cápsulas al día después de cada comida.' }
       ]
@@ -257,7 +249,7 @@
       prod: 'imagenes/producto_enfer/aneurisma.png',
       metodo: [
         { p: 'Althus', d: '3 cápsulas al día: mañana, tarde y noche, después de cada comida.' },
-        { p: 'Epiclax', d: '1 sobre en agua tibia antes del desayuno.' },
+        { p: 'Eficlax', d: '1 sobre en agua tibia antes del desayuno.' },
         { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' }
       ]
     },
@@ -266,7 +258,7 @@
       nombre: 'Anemia', icono: '🩸',
       prod: 'imagenes/producto_enfer/anemia.png',
       metodo: [
-        { p: 'Amagi', d: '1 taza en la mañana antes del desayuno y 1 taza en la noche antes de dormir.' },
+        { p: 'Amagi Café', d: '1 taza en la mañana antes del desayuno y 1 taza en la noche antes de dormir.' },
         { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' },
         { p: 'Althus', d: 'Cápsulas al día después de las comidas.' }
       ]
@@ -312,7 +304,7 @@
       nombre: 'Acné y Manchas', icono: '✨',
       prod: 'imagenes/producto_enfer/acne_manchas.png',
       metodo: [
-        { p: 'Epiclax', d: '1 sobre en agua tibia o caliente antes del desayuno.' },
+        { p: 'Eficlax', d: '1 sobre en agua tibia o caliente antes del desayuno.' },
         { p: 'Alka-M', d: '3 tabletas al día después de las comidas.' },
         { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' }
       ]
@@ -352,7 +344,7 @@
       prod: 'imagenes/producto_enfer/dengue.png',
       metodo: [
         { p: 'Althus + Revella', d: '1 sobre de cada uno. Mezclar en un litro de agua y consumir durante el día.' },
-        { p: 'Amagi', d: '7 sobres al día. Consumir 2 sobres cada 3 horas aproximadamente.' }
+        { p: 'Amagi Café', d: '7 sobres al día. Consumir 2 sobres cada 3 horas aproximadamente.' }
       ]
     },
 
@@ -378,7 +370,7 @@
       prod: 'imagenes/producto_enfer/colesterol_alto.png',
       metodo: [
         { p: 'Alka-M', d: '1 sobre antes del desayuno, 1 antes del almuerzo y 1 antes de la cena.' },
-        { p: 'Epiclax', d: '1 sobre en agua tibia en las mañanas.' },
+        { p: 'Eficlax', d: '1 sobre en agua tibia en las mañanas.' },
         { p: 'Ori Cápsulas Blandas', d: 'Cápsulas al día después de las comidas.' }
       ]
     },
@@ -398,9 +390,9 @@
       nombre: 'Cataratas', icono: '👁️',
       prod: 'imagenes/producto_enfer/cataratas.png',
       metodo: [
-        { p: 'Epiclax', d: '1 sobre antes del desayuno y 1 sobre antes de dormir.' },
+        { p: 'Eficlax', d: '1 sobre antes del desayuno y 1 sobre antes de dormir.' },
         { p: 'Revella', d: '1 sobre en agua tibia o caliente.' },
-        { p: 'Ori (aceite)', d: 'Aplicar 2 gotas directamente en el ojo afectado antes de dormir. Parpadear varias veces para distribuir el aceite.' }
+        { p: 'Ori Cápsulas Blandas', d: 'Aplicar 2 gotas del aceite directamente en el ojo afectado antes de dormir. Parpadear varias veces para distribuir.' }
       ]
     },
 
@@ -465,17 +457,42 @@
 
     document.title = 'Bioliffe — ' + enf.nombre;
 
-    const pills = enf.metodo.map(m => `<span class="pill">${m.p}</span>`).join('');
+    // Mapa de nombre de producto → ID en detalle.html
+    const PROD_ID = {
+      'Amagi Café': 'amagi-cafe', 'Amagi Black': 'amagi-black',
+      'Amagi Cappuccino': 'amagi-cappuccino', 'Amagi Fit': 'amagi-fit',
+      'Alka-M': 'alkam-suplemento', 'Althus': 'althus-energizante',
+      'Biokids Gomitas': 'biokids-gomitas', 'Cápsulas de Moringa': 'capsulas-moringa',
+      'Epiclax': 'epiclax-detox', 'Eficlax': 'epiclax-detox',
+      'Eternal Crema': 'eternal-crema', 'Harina de Moringa': 'harina-moringa',
+      'Metha': 'metha-quemador', 'Ori Cápsulas Blandas': 'oni-capsulas-blandas',
+      'Propóleo': 'propoleo-moringa', 'Proteína Colosal': 'proteina-nutricional',
+      'Purifort': 'purifort-capsulas', 'Revella': 'colageno-revella',
+      'Revitalis': 'revitalis', 'Vegafull': 'vegafull',
+      'Xol': 'xol-aceite', 'Nutro Shampoo': 'nutro-shampoo',
+    };
 
-    const items = enf.metodo.map(m => `
+    const pills = enf.metodo.map(m => {
+      const id = PROD_ID[m.p];
+      return id
+        ? `<a href="detalle.html?p=${id}" class="pill" style="text-decoration:none;">${m.p}</a>`
+        : `<span class="pill">${m.p}</span>`;
+    }).join('');
+
+    const items = enf.metodo.map(m => {
+      const id = PROD_ID[m.p];
+      const nombre = id
+        ? `<a href="detalle.html?p=${id}" style="color:var(--verde);text-decoration:none;font-weight:700;">${m.p}</a>`
+        : `<strong>${m.p}</strong>`;
+      return `
       <div class="metodo-item">
         <div class="metodo-dot"></div>
         <div>
-          <div class="metodo-prod">${m.p}</div>
+          <div class="metodo-prod">${nombre}</div>
           <div class="metodo-dosis">${m.d}</div>
         </div>
-      </div>
-    `).join('');
+      </div>`;
+    }).join('');
 
     const msg = encodeURIComponent(
       '¡Hola! Vi tu catálogo Bioliffe y tengo una consulta sobre:\n\n*' +

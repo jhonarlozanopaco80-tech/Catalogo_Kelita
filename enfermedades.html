@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
@@ -11,21 +11,13 @@
 
     body {
       font-family: 'Comfortaa', cursive;
-      background: #f7fff9;
+      background: #ffffff;
       color: #0a2e14;
       min-height: 100vh;
       overflow-x: hidden;
     }
 
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background:
-        radial-gradient(ellipse at 0% 0%,    #00e67630 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 0%,   #00e67628 0%, transparent 40%),
-        radial-gradient(ellipse at 0% 100%,   #00e67622 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 100%, #00e67630 0%, transparent 40%);
-      pointer-events: none; z-index: 0;
-    }
+    body::before { display: none; }
 
     header {
       position: relative; z-index: 10;
@@ -99,7 +91,7 @@
       border-color: var(--verde);
       box-shadow: var(--glow-soft);
       transform: translateY(-4px);
-      background: #f0fff6;
+      background: #f5f5f5;
     }
 
     .enf-icono {
@@ -149,33 +141,34 @@
 
   <div class="grid-enf">
 
-    <a href="enfermedad.html?e=acne-manchas" class="card-enf">
-      <span class="enf-icono">✨</span>
-      <span class="enf-nombre">Acné y Manchas</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=alzheimer" class="card-enf">
-      <span class="enf-icono">🧠</span>
-      <span class="enf-nombre">Alzheimer</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=anemia" class="card-enf">
+    <!-- ══ MUY COMUNES ══ -->
+    <a href="enfermedad.html?e=diabetes" class="card-enf">
       <span class="enf-icono">🩸</span>
-      <span class="enf-nombre">Anemia</span>
+      <span class="enf-nombre">Diabetes</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=aneurisma" class="card-enf">
-      <span class="enf-icono">🫀</span>
-      <span class="enf-nombre">Aneurisma</span>
+    <a href="enfermedad.html?e=colesterol-alto" class="card-enf">
+      <span class="enf-icono">💛</span>
+      <span class="enf-nombre">Colesterol Alto</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=apendicitis" class="card-enf">
+    <a href="enfermedad.html?e=bajar-peso" class="card-enf">
+      <span class="enf-icono">⚖️</span>
+      <span class="enf-nombre">Bajar de Peso</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=gastritis" class="card-enf">
       <span class="enf-icono">🫙</span>
-      <span class="enf-nombre">Apendicitis</span>
+      <span class="enf-nombre">Gastritis</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=estrenimiento" class="card-enf">
+      <span class="enf-icono">🌿</span>
+      <span class="enf-nombre">Estreñimiento</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
@@ -191,21 +184,15 @@
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=asesoramiento" class="card-enf">
-      <span class="enf-icono">💬</span>
-      <span class="enf-nombre">Asesoramiento</span>
+    <a href="enfermedad.html?e=colicos-menstruales" class="card-enf">
+      <span class="enf-icono">🌸</span>
+      <span class="enf-nombre">Cólicos Menstruales</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=asma" class="card-enf">
-      <span class="enf-icono">🫁</span>
-      <span class="enf-nombre">Asma</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=bajar-peso" class="card-enf">
-      <span class="enf-icono">⚖️</span>
-      <span class="enf-nombre">Bajar de Peso</span>
+    <a href="enfermedad.html?e=acne-manchas" class="card-enf">
+      <span class="enf-icono">✨</span>
+      <span class="enf-nombre">Acné y Manchas</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
@@ -215,9 +202,64 @@
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
+    <a href="enfermedad.html?e=anemia" class="card-enf">
+      <span class="enf-icono">🩸</span>
+      <span class="enf-nombre">Anemia</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=asma" class="card-enf">
+      <span class="enf-icono">🫁</span>
+      <span class="enf-nombre">Asma</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <!-- ══ MODERADAMENTE COMUNES ══ -->
+    <a href="enfermedad.html?e=crecimiento-ninos" class="card-enf">
+      <span class="enf-icono">👶</span>
+      <span class="enf-nombre">Crecimiento para Niños</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=dengue" class="card-enf">
+      <span class="enf-icono">🦟</span>
+      <span class="enf-nombre">Dengue</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=rinones" class="card-enf">
+      <span class="enf-icono">🫘</span>
+      <span class="enf-nombre">Riñones</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
     <a href="enfermedad.html?e=calculos-renales" class="card-enf">
       <span class="enf-icono">🫘</span>
       <span class="enf-nombre">Cálculos Renales</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=pulmones" class="card-enf">
+      <span class="enf-icono">🫁</span>
+      <span class="enf-nombre">Pulmones</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=masa-muscular" class="card-enf">
+      <span class="enf-icono">💪</span>
+      <span class="enf-nombre">Masa Muscular</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=rejuvenece" class="card-enf">
+      <span class="enf-icono">🌟</span>
+      <span class="enf-nombre">Rejuvenece</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=conjuntivitis" class="card-enf">
+      <span class="enf-icono">👁️</span>
+      <span class="enf-nombre">Conjuntivitis</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
@@ -233,81 +275,35 @@
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=colicos-menstruales" class="card-enf">
-      <span class="enf-icono">🌸</span>
-      <span class="enf-nombre">Cólicos Menstruales</span>
+    <!-- ══ MENOS COMUNES ══ -->
+    <a href="enfermedad.html?e=alzheimer" class="card-enf">
+      <span class="enf-icono">🧠</span>
+      <span class="enf-nombre">Alzheimer</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=colesterol-alto" class="card-enf">
-      <span class="enf-icono">💛</span>
-      <span class="enf-nombre">Colesterol Alto</span>
+    <a href="enfermedad.html?e=aneurisma" class="card-enf">
+      <span class="enf-icono">🫀</span>
+      <span class="enf-nombre">Aneurisma</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=conjuntivitis" class="card-enf">
-      <span class="enf-icono">👁️</span>
-      <span class="enf-nombre">Conjuntivitis</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=crecimiento-ninos" class="card-enf">
-      <span class="enf-icono">👶</span>
-      <span class="enf-nombre">Crecimiento para Niños</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=dengue" class="card-enf">
-      <span class="enf-icono">🦟</span>
-      <span class="enf-nombre">Dengue</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=diabetes" class="card-enf">
-      <span class="enf-icono">🩸</span>
-      <span class="enf-nombre">Diabetes</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=estrenimiento" class="card-enf">
-      <span class="enf-icono">🌿</span>
-      <span class="enf-nombre">Estreñimiento</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=gastritis" class="card-enf">
+    <a href="enfermedad.html?e=apendicitis" class="card-enf">
       <span class="enf-icono">🫙</span>
-      <span class="enf-nombre">Gastritis</span>
+      <span class="enf-nombre">Apendicitis</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 
-    <a href="enfermedad.html?e=masa-muscular" class="card-enf">
-      <span class="enf-icono">💪</span>
-      <span class="enf-nombre">Masa Muscular</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=pulmones" class="card-enf">
-      <span class="enf-icono">🫁</span>
-      <span class="enf-nombre">Pulmones</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=rejuvenece" class="card-enf">
-      <span class="enf-icono">🌟</span>
-      <span class="enf-nombre">Rejuvenece</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
-    <a href="enfermedad.html?e=rinones" class="card-enf">
-      <span class="enf-icono">🫘</span>
-      <span class="enf-nombre">Riñones</span>
-      <span class="enf-flecha">Ver productos →</span>
-    </a>
-
+    <!-- ══ ESPECIALES ══ -->
     <a href="enfermedad.html?e=trilogia" class="card-enf">
       <span class="enf-icono">🌿</span>
       <span class="enf-nombre">La Trilogía</span>
+      <span class="enf-flecha">Ver productos →</span>
+    </a>
+
+    <a href="enfermedad.html?e=asesoramiento" class="card-enf">
+      <span class="enf-icono">💬</span>
+      <span class="enf-nombre">Asesoramiento</span>
       <span class="enf-flecha">Ver productos →</span>
     </a>
 

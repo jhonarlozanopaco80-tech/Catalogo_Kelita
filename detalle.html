@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
@@ -11,21 +11,13 @@
 
     body {
       font-family: 'Comfortaa', cursive;
-      background: #f7fff9;
+      background: #ffffff;
       color: #0a2e14;
       min-height: 100vh;
       overflow-x: hidden;
     }
 
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background:
-        radial-gradient(ellipse at 0% 0%,    #00e67630 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 0%,   #00e67628 0%, transparent 40%),
-        radial-gradient(ellipse at 0% 100%,   #00e67622 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 100%, #00e67630 0%, transparent 40%);
-      pointer-events: none; z-index: 0;
-    }
+    body::before { display: none; }
 
     header { position: relative; z-index: 10; text-align: center; padding: 28px 20px 10px; }
 
@@ -228,7 +220,7 @@
   <p style="text-align:center;padding:40px;color:#999;">Cargando...</p>
 </div>
 
-<a href="index.html" class="btn-volver" style="display:flex;justify-content:center;margin:0 20px 16px;">◀ Volver al inicio</a>
+<a href="catalogo.html" class="btn-volver" style="display:flex;justify-content:center;margin:0 20px 16px;">◀ Volver al catálogo</a>
 <footer>BIOLIFFE BOLIVIA · CATÁLOGO VIRTUAL OFICIAL</footer>
 
 <script src="config.js"></script>
@@ -245,13 +237,13 @@
       precio: 'Bs. 225',
       pres: ['Envase 100 Cápsulas'],
       img: 'imagenes/productos/capsulas.png',
-      desc: 'Las Cápsulas de Moringa están conformadas por hojas de moringa altamente procesadas para potenciar la biodisponibilidad de sus nutrientes y ayudar a elevar el sistema inmunitario de manera natural.',
+      desc: 'Las Cápsulas de moringa están conformadas con 100% de hojas de moringa, para personas que requieran comer alimentos fortificados y necesiten elevar su sistema inmunológico. Este es un alimento de alto nivel proteico.',
       ben: [
         'Fortalecen el sistema inmune.',
         'Contiene alto valor energético.',
-        'Ayuda a reducir la cantidad de glucosa en la sangre.',
-        'Aumenta la cantidad de leche materna.',
-        'Rico en vitaminas, minerales y aminoácidos esenciales.'
+        'Contiene calcio y fósforo, ayudando a mantener los huesos sanos y fuertes.',
+        'Ayuda a reducir la cantidad de glucosa en la sangre, así como el azúcar y las proteínas en la orina.',
+        'Es rico en vitaminas, minerales, aminoácidos esenciales y más.'
       ]
     },
 
@@ -270,17 +262,18 @@
     },
 
     'oni-capsulas-blandas': {
-      nombre: 'Cápsulas Blandas Aceite de Moringa — Oni',
+      nombre: 'Cápsulas Blandas Aceite de Moringa — Ori',
       cat: 'Suplementos · Bioliffe',
       precio: 'Bs. 400',
-      pres: ['Envase 100ml'],
+      pres: ['Envase 60 Cápsulas'],
       img: 'imagenes/productos/ori.png',
-      desc: 'El Oni son cápsulas blandas de aceite de moringa que ayudan a potenciar los nutrientes que se consumen. El aceite de moringa tiene los nutrientes activos que forman parte del cuerpo humano.',
+      desc: 'El Ori son cápsulas blandas de aceite de moringa que ayudan a potenciar la salud. Es de fácil y rápida digestión, haciendo que sus nutrientes actúen de forma inmediata en tu organismo.',
       ben: [
-        'Alto contenido de ácido oleico, ácido linoleico y ácido linolénico.',
-        'Tiene propiedades anti-inflamatorias.',
+        'El aceite de moringa contiene miles de veces más zeatina que cualquier otro aceite.',
+        'Tiene alto contenido de ácido oleico, ácidos grasos, omega 3, vitaminas A, C y E.',
+        'Tiene propiedades anti-inflamatorias al contener fenoles y taninos, mejorando las irritaciones de las pieles más sensibles.',
         'Ayuda a reducir el colesterol y la presión arterial.',
-        'Tiene propiedades que ayudan en la pérdida de peso.'
+        'Tiene propiedades que ayudan en reducir el aumento de peso.'
       ]
     },
 
@@ -303,16 +296,16 @@
     'alkam-suplemento': {
       nombre: 'Suplemento de Moringa — Alka-M',
       cat: 'Suplementos · Bioliffe',
-      precio: 'Bs. 350 / Bs. 375',
-      pres: ['Pote', 'Sachet', 'Stick'],
+      precio: 'Bs. 225',
+      pres: ['Doypack', 'Stick 10g'],
       img: 'imagenes/productos/alka-m.png',
-      desc: 'El Alka-M es un suplemento alcalinizante con una variedad concentrada de moringa que potencia el fortalecimiento interno del organismo y alcaliniza el pH del cuerpo.',
+      desc: 'ALKA-M es un suplemento único que ayuda a fortalecer el sistema inmunológico por su rica variedad concentrada de nutrientes y vitaminas. Puedes acompañarlo con alguna bebida o jugo de tu preferencia.',
       ben: [
-        'Ayuda al fortalecimiento interno del organismo.',
-        'La sílice promueve el fortalecimiento interno.',
-        'Las hojas de moringa alcalinizan el pH del cuerpo.',
-        'Potencia el estado de salud y limpieza natural del organismo.',
-        'Disponible en cómodas presentaciones para cualquier momento.'
+        'La sábila ayuda al fortalecimiento intestinal.',
+        'El yacón posee proteínas y carbohidratos, además reduce los niveles de azúcar en la sangre después de su consumo repetido.',
+        'El bicarbonato de sodio es un antiácido usado para aliviar la pirosis (acidez estomacal).',
+        'Las hojas de moringa equilibran el PH del cuerpo.',
+        'Su poder alcalino neutraliza el ácido (alcaliniza), previniendo así enfermedades crónicas.'
       ]
     },
 
@@ -332,18 +325,19 @@
     },
 
     'proteina-nutricional': {
-      nombre: 'Proteína Nutricional con Moringa',
+      nombre: 'Proteína Nutricional con Moringa — Batido Colosal',
       cat: 'Suplementos · Bioliffe',
       precio: 'Bs. 425',
-      pres: ['Pote 1197gr'],
+      pres: ['Pote 550g'],
       img: 'imagenes/productos/colosal.png',
-      desc: 'Batido Nutricional bien balanceado con fibra, vitaminas y minerales. Contiene 15gr de proteína por porción y multivitamínicos que ayudan al control del peso y la vitalidad.',
+      desc: 'EL BATIDO COLOSAL es una explosión de proteínas, tiene como componente principal la soya, que te brinda los 9 aminoácidos esenciales que tu cuerpo necesita. Asimismo, te otorga una generosa dosis de fibra exclusiva de fuentes vegetales.',
       ben: [
-        'Suplemento nutricional rico en proteínas.',
-        'El Multivitamínico aporta más de 12 vitaminas.',
-        'Ayuda a reducir centímetros en cintura.',
-        'Contribuye al control del peso corporal.',
-        'Rico en antioxidantes naturales.'
+        'Es un Multivitamínico potente, ya que cuenta con las vitaminas A, B1 (tiamina), B2 (riboflavina), B3 (niacina), D, B6, B12, K.',
+        'Cada porción contiene 19gr de proteína.',
+        'Excelente fuente de antioxidantes naturales (vitaminas C y E).',
+        'Es un suplemento nutricional alto en calcio y en fósforo.',
+        'Previene la pérdida de masa muscular.',
+        'Reduce los niveles de colesterol.'
       ]
     },
 
@@ -351,26 +345,27 @@
       nombre: 'Revitalizante Natural de Alto Potencial — Revitalis',
       cat: 'Bienestar · Bioliffe',
       precio: 'Bs. 400',
-      pres: ['Pote 379gr'],
+      pres: ['Pote 225g'],
       img: 'imagenes/productos/revitalis.png',
-      desc: 'REVITALIS contiene una gran potencia de sustancias para revitalizar tu organismo, fortalecerlo, renovarlo y ayudarte a ti mismo. Alto potencial antioxidante y energizante natural.',
+      desc: 'REVITALIS contiene un gran conjunto de ingredientes naturales que ayudarán a revitalizar tu organismo, renovando tu energía y salud a su máximo potencial.',
       ben: [
-        'El Maca actúa como estimulante y antioxidante de alto potencial.',
-        'La uchucara regenera y rejuvenece los tejidos del organismo.',
-        'La moringa reduce el estrés y el cansancio a largo plazo.',
-        'Ayuda a disminuir los síntomas del envejecimiento.'
+        'El kión actúa como antioxidante y antiinflamatorio, mejora el riego sanguíneo y ayuda a disminuir los síntomas del resfriado.',
+        'La achicoria es rica en antioxidantes, vitamina C, vitamina A y minerales como el potasio, magnesio y el calcio.',
+        'La achicoria favorece la creación de glóbulos rojos.',
+        'El Aloe vera posee 7 de nueve aminoácidos esenciales como la fenilalanina, leucina, lisina, metionina, isoleucina, treonina y valina.',
+        'La moringa reduce el estrés, la fatiga y el cansancio.'
       ]
     },
 
     'epiclax-detox': {
-      nombre: 'Detox Natural con Semillas de Moringa — Epiclax',
+      nombre: 'Detox Natural con Semillas de Moringa — Eficlax',
       cat: 'Bienestar · Bioliffe',
       precio: 'Bs. 375',
-      pres: ['Polvo 500g', 'Sachet', 'Stick'],
+      pres: ['Pote 390g', 'Doypack 30 sticks', 'Stick 10g'],
       img: 'imagenes/productos/eficlax.png',
-      desc: 'Eficlas contiene semillas de moringa liofilizadas, acompañado de diversas hojas y frutos que brindan nutrientes al cuerpo y potencian tu sistema de auto-limpieza y depuración natural.',
+      desc: 'Eficlax contiene semillas de moringa liofilizadas, acompañado de diversas hojas y frutos que busca nutrir bien tu cuerpo y potenciar tu sistema de auto-limpieza y depuración.',
       ben: [
-        'La Stevia y El Yacón ayudan al sistema digestivo y previenen el estreñimiento.',
+        'La Stevia y El yacón ayuda a tener un sistema digestivo saludable y prevenir el estreñimiento.',
         'El tamarindo es rico en fibra, minerales y vitaminas A y C.',
         'La Pitahaya es una fuente de antioxidantes naturales.',
         'La Ciruela tiene elevados niveles de potasio y calcio.',
@@ -430,30 +425,32 @@
       nombre: 'Café con Moringa — Amagi',
       cat: 'Café · Bioliffe',
       precio: 'Bs. 212',
-      pres: ['Pote 300g', 'Caja 15 Sticks', 'Stick 15g'],
+      pres: ['Pote 300g'],
       img: 'imagenes/productos/amagicafe.png',
-      desc: 'Amagi café contiene gran variedad de fitonutrientes esenciales entre vitaminas, proteínas, carbohidratos, minerales y más, que ayudan a mejorar y fortalecer nuestro sistema inmune naturalmente.',
+      desc: 'Amagi café contiene gran variedad de fitonutrientes esenciales, entre vitaminas, proteínas, carbohidratos, minerales y más; que ayudan a mejorar y fortalecer nuestro sistema inmune naturalmente.',
       ben: [
-        'Reduce el cansancio, la fatiga y el estrés.',
+        'Contiene moringa que reduce el cansancio, la fatiga y el estrés.',
         'Mejora el sistema cardiovascular.',
         'Ayuda a la reducción de enfermedades neuronales.',
-        'Mejora el tránsito intestinal y genera la función diurética.',
-        'Previene la esclerosis múltiple y el daño celular del cerebro.'
+        'Mejora el tránsito intestinal, y genera la función diurética.',
+        'Previene la esclerosis múltiple debido a su efecto antiinflamatorio en las neuronas.',
+        'Previene el daño celular del cerebro para evitar Alzheimer y Parkinson.'
       ]
     },
 
     'amagi-black': {
-      nombre: 'Café Moringa Ganoderma y Espirulina — Amagi Black',
+      nombre: 'Café con Moringa, Ganoderma y Espirulina — Amagi Black',
       cat: 'Café · Bioliffe',
-      precio: 'Bs. 325 / Bs. 300',
-      pres: ['Pote', 'Caja Sticks', 'Stick'],
+      precio: 'Bs. 300 (pote) / Bs. 325 (caja)',
+      pres: ['Pote 100g', 'Caja 20 Sticks', 'Stick 6g'],
       img: 'imagenes/productos/amagiblack.png',
-      desc: 'Amagi Black es café base de energía natural que fortalece el sistema inmune de una fuente poderosa, combinando moringa, Ganoderma y Espirulina.',
+      desc: 'Amagi Black es un café a base de moringa, ganoderma y espirulina, que lo convierte en una fuente de energía natural y fortalece el sistema inmune de una manera eficaz.',
       ben: [
-        'El Ganoderma fortalece el sistema inmune.',
-        'El hongo Ganoderma contiene moléculas anticancerígenas.',
-        'Vitamina A y Zeaxantina que previenen la esclerosis.',
-        'La moringa aporta altos niveles nutritivos y nutrientes.'
+        'Contiene Espirulina que fortalece los huesos.',
+        'Contiene Ganoderma que fortalece el sistema inmunológico.',
+        'Contiene vitamina A y Zeaxantina, que previene enfermedades neurodegenerativas.',
+        'El hongo Ganoderma contiene moléculas, incluyendo triterpenoides, polisacáridos y peptidoglicanos.',
+        'La moringa contiene altos niveles nutritivos.'
       ]
     },
 
@@ -507,34 +504,20 @@
       nombre: 'Colágeno con Moringa — Revella',
       cat: 'Belleza · Bioliffe',
       precio: 'Bs. 375',
-      pres: ['Sachet', 'Stick', 'Envase'],
+      pres: ['Doypack'],
       img: 'imagenes/productos/revella.png',
-      desc: 'Revella es la mejor forma de limpiar y suavizar todo tu rostro en su fórmula suave, adecuada para todo tipo de piel ya que no contiene perfume.',
+      desc: 'Revella te garantiza un resultado veloz y visible. La combinación del colágeno con moringa te da los beneficios necesarios para fortalecer y rejuvenecer tu cuerpo.',
       ben: [
-        'Propiedades antienvejecimiento al mantener la piel hidratada.',
-        'El Ácido Hialurónico reduce la apariencia de arrugas y líneas finas.',
-        'Células Madre para regenerar y reparar tejidos de la piel.',
-        'Colágeno y extracto de moringa que reparan y renuevan la piel.',
-        'Vitamina A y E que fortalecen la piel.',
-        'Promueve elasticidad y firmeza del cuerpo.'
+        'Cero uso de preservantes, cuida tu salud y disminuye el riesgo de daños cardíacos.',
+        'Actúa como antioxidante y desintoxicante.',
+        'Contiene vitamina C que actúa como antioxidante.',
+        'Fortalece huesos, tendones, cartílagos y músculos.',
+        'Promueve la elasticidad y firmeza de la piel.',
+        'Con colágeno que rejuvenece la piel.',
+        'Elimina toxinas del cuerpo.'
       ]
     },
 
-    'colageno-revella-pote': {
-      nombre: 'Colágeno con Moringa Pote — Revella',
-      cat: 'Belleza · Bioliffe',
-      precio: 'Bs. 350',
-      pres: ['Pote 100g'],
-      img: 'imagenes/productos/revella.png',
-      desc: 'Revella en pote, versión sin azúcar. Tiene el aceite de moringa que ayuda a tener un estado de salud y vitalidad óptima para la piel y el cuerpo.',
-      ben: [
-        'Cero uso de azúcar.',
-        'Fortalece huesos, tendones, cartílagos y articulaciones.',
-        'Promueve la elasticidad y firmeza de la piel.',
-        'Camu camu que ayuda a reducir la inflamación.',
-        'Alta concentración de vitamina C.'
-      ]
-    },
 
     'xol-aceite': {
       nombre: 'Aceite de Moringa — XOL',
@@ -556,14 +539,14 @@
       precio: 'Bs. 500',
       pres: ['Envase 50g'],
       img: 'imagenes/productos/eternal.png',
-      desc: 'Eternal es la mejor crema para limpiar y suavizar todo tu rostro. Fórmula suave adecuada para todo tipo de piel, sin perfume, con colágeno y ácido hialurónico.',
+      desc: 'Eternal es la mejor forma de limpiar y suavizar todo tu rostro, incluidos ojos y los labios en una sola pasada, no reseca, gracias a su fórmula suave. Es adecuada para toda piel ya que no contiene perfume.',
       ben: [
-        'Propiedades antienvejecimiento al mantener la piel hidratada.',
-        'El Ácido Hialurónico reduce arrugas y líneas finas.',
-        'Células Madre para regenerar y reparar tejidos de la piel.',
-        'Colágeno y extracto de moringa que reparan y renuevan la piel.',
-        'Vitamina A y E que fortalecen la piel.',
-        'Estimula la producción de colágeno propio.'
+        'Tiene Propiedades antienvejecimiento al mantener la piel hidratada; el ácido hialurónico puede ayudar a reducir la apariencia de arrugas y líneas finas.',
+        'Ácido Hialurónico conlleva a la reparación de la barrera cutánea, reduciendo la pérdida de humedad.',
+        'Contiene Células Madre que sirven para regenerar y reparar tejidos de la piel.',
+        'Contiene colágeno y extracto de moringa que repara la piel y la renueva.',
+        'Contiene Vitamina A y E que fortalecen la piel.',
+        'Estimula la producción de colágeno.'
       ]
     },
 
