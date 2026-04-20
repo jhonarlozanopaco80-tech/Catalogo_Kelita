@@ -41,6 +41,6 @@ const SOCIA = {
   // 5. TU FACEBOOK
   //    - Abre tu perfil o página → Compartir → Copiar link
   // --------------------------------------------------
-  facebook_url: "https://www.facebook.com/share/1EntU",
+  facebook_url: "https://www.facebook.com/share/18Hgu9MaDw/",
 
 };
